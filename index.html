@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SpaceX Microsite. Teaching you about space activity in a fun way">
+    <meta name="keywords" content="spacex, space activity, space travel, space, spaceships, rockets, elon musk, falcon, mars, mars travel, humans in space, missions to space, international space station, iss, iss location">
+    <meta name="robots" content="noindex" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1f3ab86c3a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/iss-favicon.svg">
+    <title>SpaceX Microsite</title>
+</head>
+<body>
+    <div class="loading-wrapper">
+        <div class="loader"></div>
+    </div>
+    <header role="banner">
+        <img src="./img/astronaut.jpg" alt="Astronaut floating in space" class="hero-bg">
+        <a href="./index.html"><img src="./img/logo_white.png" class="nav-logo logo-mobile" alt="SpaceX logo"></a>
+        <nav role="navigation">
+            <ul class="mainnav" >
+                <li><a href="./index.html" id="active">Home</a></li>
+                <li><a href="./missions.html">Missions</a></li>
+                <li class="logo-desktop"><a href="./index.html"><img src="./img/logo_white.png" class="nav-logo" alt="SpaceX logo"></a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./mars.html">Mars</a></li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="spacex-link">
+            <a href="https://www.spacex.com/" class="spacex-link">Visit the SpaceX official website here</a>
+        </div>
+        
+    </header>
+    <main role="main">
+        <section>
+            <h2>Humans in space</h2>
+            <div class="div-bg">
+                <!-- Placeholder -->
+                <div id="humans-in-space">
+                    <div class="number">0</div>
+                    <div class="text">People</div>
+                </div>
+            </div>
+        </section>
+        <section id="missions-section">
+            <h2>Missions</h2>
+            <div class="div-bg-2" id="next-mission-container">
+                <h3>Next mission in</h3>
+                <!-- Placeholder -->
+                <div class="col-container countdown" id="next-mission">
+                    <div class="col">
+                        <div class="row number" id="days">0</div>
+                        <div class="row text">Days</div>
+                    </div>
+                    <div class="col">
+                        <div class="row number" id="hours">0</div>
+                        <div class="row text">Hours</div>
+                    </div>
+                    <div class="col">
+                        <div class="row number" id="minutes">0</div>
+                        <div class="row text" id="minutes-text">Minutes</div>
+                    </div>
+                    <div class="col">
+                        <div class="row number" id="seconds">0</div>
+                        <div class="row text" id="seconds-text">Seconds</div>
+                    </div>
+                </div>
+            </div>
+            <a href="./missions.html" class="btn-wrap">
+                <div class="btn" id="more-missions">Read about previous missions</div>
+            </a>
+        </section>
+        <section>
+            <h2>Where is the ISS now?</h2>
+            <div>
+                <div id="map">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Sign up for our newsletter</h2>
+            <div class="rectangle">
+                <p>Stay up to date about news and happenings related to SpaceX</p>
+                <form action="index.html" class="newsletter-signup" id="subscribeForm">
+                    <input type="text" name="email" id="email" placeholder="Enter your email address here">
+                    <span class="btn-wrap">
+                        <button type="submit" class="btn" id="subscribe">Subscribe</button>
+                    </span>
+                    <div class="validated" id="newsletterValidated">Congratulations, you are now signed up for our newsletter</div>
+                    <div class="inputError" id="noEmailError">Please enter your email address</div>
+                    <div class="inputError" id="invalidEmailError">Please enter a valid email address</div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <ul>
+            <li class="footer-spacex-link">
+                <a href="https://www.spacex.com/">Visit the <br>
+                <img src="./img/logo_white.png" class="footer-logo" alt="SpaceX logo"> <br>
+                official website here</a>
+            </li>
+            <li>        
+                <a href="https://www.facebook.com/groups/spacexgroup/" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="https://www.flickr.com/photos/spacex/" target="_blank" title="Follow us on Flickr"><i class="fab fa-flickr"></i></a>
+                <a href="https://www.instagram.com/spacex/?hl=nb" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram-square" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA" target="_blank" title="Follow us on YouTube"><i class="fab fa-youtube-square"></i></a>
+            </li>
+            <li class="footer-copy">Front End Development - Project Exam 1</li>
+            <li class="footer-copy">This microsite is by no means affiliated with SpaceX and is only made for educational purposes</li>
+        </ul>
+    </footer>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/humans-in-space.js"></script>
+    <script src="./js/mission-countdown.js"></script>
+    <script src="./js/embed-map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh8aQrZtZD1Pyb_BQiIdg71NMvSef5DYA&callback=initMap"></script>
+    <script src="./js/subscribe-form.js"></script>
+    <script src="./js/loading.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SpaceX Microsite. Teaching you about space activity in a fun way. Do you have any questions or feedback? Let us know in the contact form here">
+    <meta name="keywords" content="spacex, space activity, space travel, space, spaceships, rockets, elon musk, contact, contact form, contact spacex">
+    <meta name="robots" content="noindex" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1f3ab86c3a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/iss-favicon.svg">
+    <title>SpaceX Microsite - Contact</title>
+</head>
+<body>
+    <div class="loading-wrapper">
+        <div class="loader"></div>
+    </div>
+    <header role="banner">
+        <img src="./img/contact.png" alt="Wifi symbol made up of the zodiac" class="hero-bg">
+        <a href="./index.html"><img src="./img/logo_white.png" class="nav-logo logo-mobile" alt="SpaceX logo"></a>
+        <nav role="navigation">
+            <ul class="mainnav" >
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./missions.html">Missions</a></li>
+                <li class="logo-desktop"><a href="./index.html"><img src="./img/logo_white.png" class="nav-logo" alt="SpaceX logo"></a></li>
+                <li><a href="./contact.html" id="active">Contact</a></li>
+                <li><a href="./mars.html">Mars</a></li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="spacex-link">
+            <a href="https://www.spacex.com/" class="spacex-link">Visit the SpaceX official website here</a>
+        </div>
+    </header>
+    <main role="main">
+        <h1>Contact</h1>
+        <section class="rectangle contact">
+            <p>Do you have any questions or feedback? Let us know in the contact form below</p>
+            <form action="contact.html" id="contactForm">
+                <input type="text" name="firstname" id="firstName" placeholder="First name">
+                <div class="inputError" id="firstNameError">Please enter your first name</div>
+                <input type="text" name="lastname" id="lastName" placeholder="Last name">
+                <div class="inputError" id="lastNameError">Please enter your last name</div>
+                <input type="text" name="email" id="email" placeholder="Email address">
+                <div class="inputError" id="noEmailError">Please enter your email address</div>
+                <div class="inputError" id="invalidEmailError">Please enter a valid email address</div>
+                <textarea name="message" id="message"  rows="5" placeholder="Your message"></textarea>
+                <div class="inputError" id="messageError">Please enter your message</div>
+                <div class="validated" id="formValidated">Thank you for your message</div>
+                <div class="btn-wrap">
+                    <button type="submit" class="btn" id="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <ul>
+            <li class="footer-spacex-link">
+                <a href="https://www.spacex.com/">Visit the <br>
+                <img src="./img/logo_white.png" class="footer-logo" alt="SpaceX logo"> <br>
+                official website here</a>
+            </li>
+            <li>        
+                <a href="https://www.facebook.com/groups/spacexgroup/" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="https://www.flickr.com/photos/spacex/" target="_blank" title="Follow us on Flickr"><i class="fab fa-flickr"></i></a>
+                <a href="https://www.instagram.com/spacex/?hl=nb" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram-square" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA" target="_blank" title="Follow us on YouTube"><i class="fab fa-youtube-square"></i></a>
+            </li>
+            <li class="footer-copy">Front End Development - Project Exam 1</li>
+            <li class="footer-copy">This microsite is by no means affiliated with SpaceX and is only made for educational purposes</li>
+        </ul>
+    </footer>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/contact-form.js"></script>
+    <script src="./js/loading.js"></script>
+</body>
+</html>

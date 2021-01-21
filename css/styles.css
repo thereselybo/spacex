@@ -1,0 +1,729 @@
+/* Global 
+----------*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+main {
+  position: relative;
+}
+
+h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+}
+
+h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  max-width: 80%;
+  margin: 32px auto 32px;
+}
+
+h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* Header and footer
+--------------------- */
+.hero-bg {
+  position: absolute;
+  top: -16px;
+  left: 0;
+  z-index: -10;
+  width: 100vw;
+  height: auto;
+  opacity: 0.25;
+}
+
+.mainnav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 8px;
+  font-size: 18px;
+}
+
+.nav-logo {
+  width: 250px;
+  height: 100%;
+}
+
+.mainnav li {
+  list-style-type: none;
+}
+
+.burger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 8px;
+  margin-right: 24px;
+  font-size: 32px;
+  padding: 8px;
+}
+
+.burger:hover {
+  cursor: pointer;
+}
+
+.spacex-link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.2em;
+  font-size: 14px;
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+footer {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  padding-top: 32px;
+  padding-bottom: 16px;
+  clear: both;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer ul li {
+  margin: 16px auto;
+  list-style-type: none;
+}
+
+footer a {
+  color: white;
+}
+
+.footer-copy {
+  color: white;
+  font-size: 0.7em;
+  opacity: 0.8;
+}
+
+.footer-spacex-link {
+  font-size: 0.7em;
+  letter-spacing: 0.2em;
+}
+
+.footer-logo {
+  width: 150px;
+  height: 100%;
+  margin-bottom: 5px;
+}
+
+.footer-spacex-link a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.fab {
+  font-size: 2em;
+  margin: auto 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Graphics
+------------ */
+.div-bg {
+  background: url(../img/div_bg.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: top center;
+}
+
+.div-bg-2 {
+  background: url(../img/div_bg_2.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: top center;
+}
+
+.rectangle {
+  background-color: rgba(14, 111, 125, 0.25);
+  border: 4px solid #0e6f7d;
+  padding: 10px;
+}
+
+.contact p {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  color: white;
+  background-color: rgba(207, 97, 55, 0.6);
+  font-weight: 300;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 16px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: rgb(207, 97, 55);
+  transition: all ease-in-out 0.3s;
+}
+
+.btn-wrap {
+  filter: drop-shadow(0 0 5px #cf6137);
+}
+
+#more-missions {
+  clip-path: polygon(6% 0, 100% 0, 100% 63%, 94% 100%, 0 100%, 0 37%);
+}
+
+#map {
+  height: 450px;
+  width: 100%;
+}
+
+#mars-img {
+  width: 45%;
+  margin: 0 auto;
+  left: 27.5%;
+  top: 55px;
+}
+
+.loading-wrapper {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: url(../img/galaxy_bg_all_dark.png);
+  position: fixed;
+  z-index: 10;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  margin-top: -100px;
+  left: 50%;
+  margin-left: -100px;
+  z-index: 20;
+  background: url(../img/loading.svg);
+  height: 200px;
+  width: 200px;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+/* Humans in space 
+------------------ */
+.div-bg {
+  position: relative;
+}
+
+#humans-in-space {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.number {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.text {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* Countdown
+------------ */
+.col-container {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  flex-direction: column;
+}
+
+.row {
+  flex: 1;
+  flex-direction: row;
+}
+
+#mars-countdown {
+  padding-top: 10%;
+}
+
+.countdown p {
+  width: 80%;
+  margin: 17% auto;
+}
+
+/* Missions
+----------- */
+
+.launch {
+  margin: 20px auto;
+  display: inline-block;
+}
+
+.launch h3 {
+  margin: 5px 0;
+}
+
+.launch p {
+  margin: 0;
+}
+
+/* Forms 
+-------- */
+.newsletter-signup #email {
+  padding: 16px;
+  border: none;
+  width: 70vw;
+  max-width: 300px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+#subscribe {
+  clip-path: polygon(16% 0, 100% 0, 100% 63%, 84% 100%, 0 100%, 0 37%);
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.contact input,
+#message {
+  width: 60vw;
+  max-width: 90%;
+  padding: 16px;
+  margin: 8px 16px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.contact .btn-wrap {
+  text-align: unset;
+}
+
+#submit {
+  clip-path: polygon(16% 0, 100% 0, 100% 63%, 84% 100%, 0 100%, 0 37%);
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 16px 24px;
+  margin: 16px auto;
+}
+
+.inputError {
+  color: #cf6137;
+  font-weight: 300;
+  display: none;
+  margin-bottom: 8px;
+}
+
+.validated {
+  color: yellowgreen;
+  font-weight: 300;
+  display: none;
+  margin-bottom: 8px;
+}
+
+/* Mars
+-------- */
+
+.mars-date span,
+.mars-temp span {
+  display: block;
+}
+
+.sol {
+  font-weight: 300;
+}
+
+.report-div {
+  background-image: url(../img/weather-bg.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.report-div .mars-date {
+  margin-bottom: 16px;
+}
+
+.mars-date {
+  text-transform: uppercase;
+}
+
+/* Mobile portrait
+------------------- */
+body {
+  background: url(../img/footer_bg.png) bottom,
+    url(../img/galaxy_bg_all_dark.png);
+  background-repeat: no-repeat, repeat;
+  background-attachment: scroll, fixed;
+}
+
+main {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.mainnav {
+  display: none;
+  padding-left: 0;
+}
+
+.mainnav li {
+  margin: 20px auto;
+  width: 100vw;
+  padding: 20px 0;
+}
+
+.mainnav li a {
+  padding: 20px 10px;
+}
+
+.mainnav li a:hover,
+#active {
+  color: #cf6137;
+  font-weight: 300;
+}
+
+.spacex-link {
+  display: none;
+}
+
+.logo-desktop {
+  display: none;
+}
+
+.logo-mobile {
+  display: block;
+  margin-top: 16px;
+  margin-left: 24px;
+}
+
+.div-bg {
+  height: 200px;
+}
+
+#humans-in-space {
+  top: 40%;
+}
+
+.div-bg-2 {
+  height: 200px;
+  padding-top: 30px;
+}
+
+#missions-section h2,
+#missions-h1 {
+  padding-bottom: 20px;
+}
+
+.div-bg-2 h3 {
+  margin-top: -72px;
+}
+
+#next-mission {
+  padding-top: 40px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#more-missions {
+  margin-top: 0;
+}
+
+.newsletter-signup .btn-wrap {
+  display: block;
+  margin: 16px auto;
+}
+
+#previous-missions {
+  display: inline-block;
+  background: url(../img/spaceship.svg);
+  background-size: 10vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left 6vw top 20vh;
+}
+
+.launch {
+  margin-left: 15vw;
+  max-width: 60%;
+}
+
+.mars {
+  margin-bottom: 80px;
+}
+
+#more-reports,
+#most-recent-report {
+  display: block;
+}
+
+#most-recent-report {
+  background-image: url(../img/weather-bg.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 10%;
+  font-size: 40px;
+}
+
+.report-div {
+  padding: 10%;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+#most-recent-report .mars-date {
+  margin-bottom: 16px;
+}
+
+/* Mobile landscape / tablet portrait
+------------------------------------- */
+@media (min-width: 640px) {
+  body {
+    background: url(../img/galaxy_bg_desktop.png) bottom,
+      url(../img/galaxy_bg_all_dark.png);
+    background-repeat: no-repeat, repeat;
+  }
+
+  main {
+    max-width: 700px;
+  }
+
+  .rectangle {
+    border: 5px solid #0e6f7d;
+  }
+
+  .newsletter-signup .btn-wrap {
+    display: inline-block;
+    margin-left: 24px;
+  }
+
+  .div-bg {
+    height: 400px;
+  }
+
+  .div-bg-2,
+  #next-mission-container {
+    height: 330px;
+    padding-top: 80px;
+  }
+
+  #missions-section h2 {
+    padding-bottom: 0;
+  }
+
+  .div-bg-2 h3 {
+    margin: 24px auto;
+  }
+
+  #humans-in-space {
+    top: 45%;
+  }
+
+  #more-missions {
+    margin-top: 16px;
+  }
+
+  .mars {
+    margin-bottom: 0;
+  }
+
+  #mars-countdown,
+  #next-mission {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .countdown p {
+    margin: 12px auto;
+    width: 75%;
+  }
+
+  #previous-missions {
+    width: 85vw;
+    background-size: 15vh;
+    background-position: left 8vw top 45%;
+    overflow: hidden;
+  }
+
+  .launch {
+    margin-left: 25vw;
+    text-align: left;
+    max-width: 55%;
+  }
+
+  .weather {
+    padding: 48px 0;
+    background-color: rgba(14, 111, 125, 0.25);
+    border: 6px solid #0e6f7d;
+  }
+
+  #most-recent-report {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  #more-reports,
+  #most-recent-report {
+    width: 80%;
+    margin: auto;
+    display: flex;
+  }
+
+  #most-recent-report {
+    background-image: none;
+    padding: 0 0 24px 0;
+  }
+
+  #most-recent-report .mars-date {
+    margin-bottom: 0;
+  }
+
+  .report-div {
+    padding: 40px;
+    font-size: 16px;
+  }
+
+  #more-reports {
+    flex-direction: row-reverse;
+  }
+}
+/* Tablet landscape / desktop
+----------------------------- */
+@media (min-width: 1024px) {
+  nav {
+    position: relative;
+  }
+
+  .spacex-link {
+    display: block;
+  }
+
+  .logo-desktop {
+    display: inline-block;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .mainnav {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .mainnav li {
+    display: inline-block;
+    margin: 8px 0;
+    width: 18vw;
+  }
+
+  .rectangle {
+    border: 6px solid #0e6f7d;
+  }
+
+  #previous-container {
+    position: relative;
+  }
+
+  #previous-missions {
+    height: 100%;
+    width: calc(700px + 16vw);
+    position: relative;
+    background-image: url(../img/spaceship.svg);
+    background-repeat: no-repeat;
+    background-size: 15vh;
+    background-attachment: fixed;
+    background-position: center;
+    display: block;
+    margin-left: -8vw;
+    margin-right: -8vw;
+    overflow: auto;
+    text-align: left;
+  }
+
+  .launch {
+    width: 22vw;
+    max-width: 400px;
+    margin-left: 0;
+  }
+
+  .launch:nth-of-type(odd) {
+    float: left;
+    clear: both;
+  }
+
+  .launch:nth-of-type(even) {
+    float: right;
+    clear: both;
+  }
+
+  .countdown p {
+    margin: 32px auto;
+  }
+
+  #active,
+  .mainnav li a:hover {
+    font-weight: 100;
+    color: white;
+    background: url(../img/underline-img.svg) repeat-x 98% 100%;
+  }
+
+  .mainnav .logo-desktop a:hover {
+    background: none;
+  }
+}

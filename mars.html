@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SpaceX Microsite. Teaching you about space activity in a fun way. See the weather report on Mars">
+    <meta name="keywords" content="spacex, space activity, space travel, space, spaceships, rockets, elon musk, falcon, mars, mars travel, weather mars, putting human on mars, sending human to mars">
+    <meta name="robots" content="noindex" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1f3ab86c3a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/iss-favicon.svg">
+    <title>SpaceX Microsite - Mars</title>
+</head>
+<body>
+    <div class="loading-wrapper">
+        <div class="loader"></div>
+    </div>
+    <header role="banner">
+        <img src="./img/mars.png" alt="Illustration of the planet Mars" id="mars-img" class="hero-bg">
+        <a href="./index.html"><img src="./img/logo_white.png" class="nav-logo logo-mobile" alt="SpaceX logo"></a>
+        <nav role="navigation">
+            <ul class="mainnav" >
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./missions.html">Missions</a></li>
+                <li class="logo-desktop"><a href="./index.html"><img src="./img/logo_white.png" class="nav-logo" alt="SpaceX logo"></a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./mars.html" id="active">Mars</a></li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="spacex-link">
+            <a href="https://www.spacex.com/" class="spacex-link">Visit the SpaceX official website here</a>
+        </div>
+    </header>
+    <main role="main">
+        <h1>Mars</h1>
+        <section>
+            <h2>Countdown to a man on mars</h2>
+            <div class="div-bg-2 countdown mars">
+                <div class="col-container" id="mars-countdown">
+                    <div class="col">
+                        <div class="row number" id="days">0</div>
+                        <div class="row text">Days</div>
+                    </div>
+                    <div class="col">
+                        <div class="row number" id="hours">0</div>
+                        <div class="row text">Hours</div>
+                    </div>
+                    <div class="col">
+                        <div class="row number" id="minutes">0</div>
+                        <div class="row text" id="minutes-text">Minutes</div>
+                    </div>
+                    <div class="col">
+                        <div class="row number" id="seconds">0</div>
+                        <div class="row text" id="seconds-text">Seconds</div>
+                    </div>
+                </div>
+                <p>In an article about Elon Musk in 2008, Michael S. Malone stated that Elon bet him $1 that he would put a man on Mars by 2025.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Recent weather</h2>
+            <div class="weather">
+                <div id="most-recent-report" class="col-container row">
+                    
+                </div>
+                <div id="more-reports" class="col-container">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <ul>
+            <li class="footer-spacex-link">
+                <a href="https://www.spacex.com/">Visit the <br>
+                <img src="./img/logo_white.png" class="footer-logo" alt="SpaceX logo"> <br>
+                official website here</a>
+            </li>
+            <li>        
+                <a href="https://www.facebook.com/groups/spacexgroup/" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="https://www.flickr.com/photos/spacex/" target="_blank" title="Follow us on Flickr"><i class="fab fa-flickr"></i></a>
+                <a href="https://www.instagram.com/spacex/?hl=nb" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram-square" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA" target="_blank" title="Follow us on YouTube"><i class="fab fa-youtube-square"></i></a>
+            </li>
+            <li class="footer-copy">Front End Development - Project Exam 1</li>
+            <li class="footer-copy">This microsite is by no means affiliated with SpaceX and is only made for educational purposes</li>
+        </ul>
+    </footer>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/mars-countdown.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/loading.js"></script>
+</body>
+</html>
