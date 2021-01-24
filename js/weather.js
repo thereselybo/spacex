@@ -72,13 +72,13 @@ function displayWeather(weather) {
     date = fullDate.substring(8, 10);
 
     (function () {
-      highTemp = weather[sol].AT.mx;
+      highTemp = weather[sol].PRE.mx;
       highTemp = highTemp.toString();
       highTemp = highTemp.split(".")[0];
     })();
 
     (function () {
-      lowTemp = weather[sol].AT.mn;
+      lowTemp = weather[sol].PRE.mn;
       lowTemp = lowTemp.toString();
       lowTemp = lowTemp.split(".")[0];
     })();
