@@ -2,7 +2,9 @@
 
 > Space X / NASA Microsite
 
-<img src="./img/noroff-logo.png" width="180">
+## Live project
+
+https://spacex.lybo.dev
 
 ## Goal
 
